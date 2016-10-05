@@ -1,0 +1,19 @@
+{
+  "name": "online-designers-frontend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/s30n4/online-designers-frontend.git"
+  },
+  "author": "Sina Sadrzadeh <sadrzadeh.sinaa@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/s30n4/online-designers-frontend/issues"
+  },
+  "homepage": "https://github.com/s30n4/online-designers-frontend#readme"
+}

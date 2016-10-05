@@ -1,0 +1,41 @@
+// ************* */
+// Common Styles //
+// ************* */
+
++build-color-palette
+
+// IranSans Font Family
++font-face("iransans/bold", 'iransansbold', 'iransans')
++font-face("iransans/light", 'iransanslight', 'iransans')
++font-face("iransans/medium", 'iransansmedium', 'iransans')
+
+// Samim Font Family
++font-face("samim/bold", 'samimbold', 'samim')
++font-face("samim/normal", 'samimlight', 'samim')
+
+// Samim Font Family
++font-face("vazir/bold", 'vazirbold', 'vazir')
++font-face("vazir/normal", 'vazirlight', 'vazir')
+
+// Fira Mono Font Family
++font-face("firamono/bold", 'firamonobold', 'firamono')
++font-face("firamono/regular", 'firamonoregular', 'firamono')
++font-face("firamono/medium", 'firamonomedium', 'firamono')
+
+h1, h2, h3, h4, h5, h6
+  font-family: "iransansbold", Tahoma, Arial, sans-serif !important
+h4, h5, h6, th
+  font-family: "iransansmedium", Tahoma, Arial, sans-serif !important
+p, label, input, button, small, a, li, legend, td, span, strong, div, pre
+  font-family: "iransanslight", Tahoma, Arial, sans-serif !important
+
+// Override parsley
+.parsley-errors-list
+  color: $alert-color
+  margin: 0
+  padding-bottom: 10px
+  margin-top: -5px
+
+// TODO: Ask sina What is this for
+.top-fixed-padding
+  padding-top: 100px

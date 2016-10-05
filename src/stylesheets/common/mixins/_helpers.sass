@@ -1,0 +1,65 @@
+// ******************** */
+// Set Of Helpers Mixin //
+// ******************** */
+
+@for $i from 1 through length($helpers-sizes)
+  $size: nth($helpers-sizes, $i)
+
+  .font-#{$size}
+    font-size: $helpers-font-size * $i + px
+
+  .padding-#{$size}
+    padding: $helpers-padding * $i + px
+
+  @each $direction in $helpers-directions
+    .padding-#{$size}-#{$direction}
+      padding-#{$direction}: $helpers-padding * $i + px!important
+
+    .no-padding-#{$direction}
+      padding-#{$direction}: 0
+
+  .margin-#{$size}
+    margin: $helpers-margin * $i + px
+
+  @each $direction in $helpers-directions
+    .margin-#{$size}-#{$direction}
+      margin-#{$direction}: $helpers-margin * $i + px!important
+
+    .no-margin-#{$direction}
+      margin-#{$direction}: 0
+
+.no-padding
+  padding: 0!important
+
+.no-margin
+  margin: 0!important
+
+.no-border
+  border: 0 none!important
+
+.no-border-radius
+  border-radius: 0!important
+
+.list-style-type-none
+  list-style-type: none!important
+
+.full-width
+  width: 100%
+
+.display-inline
+  display: inline
+
+.force-en
+  font-family: 'firamonomedium', sans-serif !important
+
+.valign-top
+  vertical-align: top
+
+.valign-middle
+  vertical-align: middle
+
+.valign-bottom
+  vertical-align: bottom
+
+.dir-ltr
+  direction: ltr

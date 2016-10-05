@@ -1,0 +1,13 @@
+// ****************** */
+// Font Loading Mixin //
+// ****************** */
+
+=font-face($font-path, $font-family, $font-filename, $font-weight: normal, $font-style: normal, $font-stratch: normal)
+  @font-face
+    font-family: '#{$font-family}'
+    src: url('/static/fonts/#{$font-path}/#{$font-filename}.eot')
+    src: url('/static/fonts/#{$font-path}/#{$font-filename}.eot?') format('eot'), url('/static/fonts/#{$font-path}/#{$font-filename}.woff2') format('woff2'), url('/static/fonts/#{$font-path}/#{$font-filename}.woff') format('woff'), url('/static/fonts/#{$font-path}/#{$font-filename}.ttf') format('truetype')
+
+    font-weight: $font-weight
+    font-style: $font-style
+    font-stratch: $font-stratch

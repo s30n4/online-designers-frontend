@@ -1,0 +1,15 @@
+// ******************* */
+// Build color palette //
+// ******************* */
+
+=build-color-palette
+  @each $name, $color in $color-palette
+    .text-#{$name}
+      color: $color !important
+    .background-#{$name}
+      background-color: $color !important
+    .link-#{$name}
+      a
+        color: $color
+        &:hover, &:focus, &:active
+          color: darken($color, 20%)
